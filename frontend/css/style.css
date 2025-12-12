@@ -123,14 +123,34 @@ input {
     margin: 0 auto;
 }
 
+.viewMore {
+    padding-bottom: 20px;
+}
+
+.slideshowBackground .featureTitle {
+    text-align: center;
+    color: white;
+}
+
 .slideshow {
     max-width: 800px;
     position: relative;
     margin: auto;
 }
 
+.slideshowBackground {
+    width: 100%;
+    background-color: #14254d;
+    padding-top: 50px;
+}
+
 .slidesFade {
     display: none;
+}
+
+.slidesFade .text{
+    text-align: center;
+    color: white;
 }
 
 .slidesFade img {
@@ -162,17 +182,9 @@ input {
     background-color: rgba(0,0,0,0.8);
 }
 
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.dot.active, .dot:hover {
-    background-color: #717171;
+.footer {
+    background-color: #0f172a;
+    padding: 20px;
+    text-align: center;
+    color: #94a3b8;
 }

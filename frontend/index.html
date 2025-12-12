@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Portfolio</title>
+    <title>Portfolio Page</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- navbar -->
     <div class="topnav">
         <a class="title" href="index.html">Portfolio Site</a>
-        <a class="contact" href="#">Contact Me</a>
-        <a class="projects" href="#">Projects</a>
-        <a class="about" href="#">About</a>
+        <a class="contact" href="pages/contactMe.html">Contact Me</a>
+        <a class="projects" href="pages/projectPage.html">Projects</a>
+        <a class="about" href="pages/about.html">About</a>
     </div>
 
     <!-- Profile Picture stuff -->
@@ -35,37 +35,56 @@
 
     <!-- maybe a button for more info? Just going to have it go down the page -->
     <div class="viewMore">
-        <button type="button" class="button">
+        <button type="button" class="button" onclick="scrollToSlideshow()">
             Recent Projects
         </button>
     </div>
 
-    <!-- Could add an carousel -->
-    <div class="slideshow">
-        <div class="slidesFade">
-            <div class="numberText">1 / 3</div>
-            <img src="images/github.png">
-            <div class="text">Caption 1</div>
+    <!-- Could add a carousel -->
+    <div class="slideshowBackground">
+        <div class="featureTitle">
+            <h2>Featured Projects</h2>
         </div>
-        <div class="slidesFade">
-            <div class="numberText">2 / 3</div>
-            <img src="images/linkden.png">
-            <div class="text">Caption 2</div>
+        <div class="slideshow">
+            <div class="slidesFade">
+                <img src="images/Penni.jpg">
+                <div class="text">
+                    <h1>Penni the Spider Robot</h1>
+                    <p>My role for this project was the low-end software developer, as well as the project lead.
+                        Penni is a autonomous quadruped that will walk towards and pick up green blocks using her magnetic arm mounted
+                        below her.
+                    </p>
+                </div>
+            </div>
+            <div class="slidesFade">
+                <img src="images/CragTag.png">
+                <div class="text">
+                    <h1>CragTag</h1>
+                    <p>CragTag is a social media rockclimbing app. My role in this project was the project lead. backend developer,
+                        and database. The webapp supports live notifications using socket.io, AWS for storing images, and refresh tokens for
+                        authentication.
+                    </p>
+                </div>
+            </div>
+            <div class="slidesFade">
+                <img src="images/CloudVault.jpg">
+                <div class="text">
+                    <h1>CloudVault</h1>
+                    <p>CloudVault is a containerized file uploader using Chainguard Images for minimal, secure environments. 
+                        It secures data with HTTPS, SSL certificates, and persistent storage, ensuring safe file management 
+                        with Docker. My role was the primary back-end developer using flask. I was also in charge of the DevOps
+                    for deploying via docekr.</p>
+                </div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-        <div class="slidesFade">
-            <div class="numberText">3 / 3</div>
-            <img src="images/email.png">
-            <div class="text">Caption 3</div>
-        </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <br>
+        <script src="js/script.js"></script>
     </div>
-    <br>
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
+
+    <div class="footer">
+        <p>PUT SOMETHING HERE</p>
     </div>
-    <script src="js/script.js"></script>
 </body>
 </html>
